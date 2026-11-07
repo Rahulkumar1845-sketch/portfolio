@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahul Kumar | Cyber Security Student</title>
+<meta name="description" content="Portfolio of Rahul Kumar, B.Tech CSE (Cyber Security) student at Tula University, Dehradun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <nav class="wrap" aria-label="Main">
+  <a class="logo" href="#home">rahul<span>.</span>kumar</a>
+  <ul class="links" id="links">
+   <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+   <li><a href="#projects">Projects</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;gap:8px">
+   <button class="icon-btn" id="theme" aria-label="Switch light or dark theme">◐</button>
+   <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+ </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+ <div class="wrap grid">
+  <div>
+   <h1>Hi, I'm Rahul Kumar.</h1>
+   <div class="role"><span id="typed"></span><span class="cursor"></span></div>
+   <p class="sub">Second-year B.Tech student in Computer Science and Engineering (Cyber Security) at Tula University, Dehradun. I build small web projects and learn how systems get attacked so I can help defend them.</p>
+   <div class="btns">
+    <a class="btn primary" href="#projects">View projects</a>
+    <a class="btn ghost" href="Rahul_Kumar_Resume.pdf" download>Download resume</a>
+   </div>
+  </div>
+  <div class="demo" aria-labelledby="demoTitle">
+   <h3 id="demoTitle">Try it: password strength check</h3>
+   <small>Runs in your browser. Nothing is sent anywhere.</small>
+   <label for="pw" class="sr" style="position:absolute;left:-9999px">Password</label>
+   <input id="pw" type="text" placeholder="Type a sample password" autocomplete="off">
+   <div class="meter"><i id="pwBar"></i></div>
+   <div id="pwText" aria-live="polite">Start typing to see the score.</div>
+   <ul id="pwTips"></ul>
+  </div>
+ </div>
+</section>
+
+<section id="about"><div class="wrap rv">
+ <h2>About me</h2>
+ <div class="about-grid">
+  <div>
+   <p class="lead" style="margin-bottom:16px">I'm a quick learner with a strong interest in cyber security and problem solving. I started with HTML, CSS and C, and now I'm practising data structures and algorithms regularly.</p>
+   <p style="color:var(--muted)">I like working in teams, explaining ideas clearly, and turning small ideas into working projects. I'm looking for internships where I can learn from real security work and contribute.</p>
+  </div>
+  <ul class="facts">
+   <li><span>Degree</span><b>B.Tech CSE (Cyber Security)</b></li>
+   <li><span>University</span><b>Tula University, Dehradun</b></li>
+   <li><span>Year</span><b>Second year</b></li>
+   <li><span>Graduating</span><b>August 2029</b></li>
+   <li><span>Looking for</span><b>Internships</b></li>
+  </ul>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap rv">
+ <h2>Skills</h2>
+ <p class="lead">What I'm confident with today, and what I'm still building up.</p>
+ <div class="skills">
+  <div><div class="skill-top"><span>HTML and CSS</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+  <div><div class="skill-top"><span>JavaScript</span><span>45%</span></div><div class="bar"><i data-w="45"></i></div></div>
+  <div><div class="skill-top"><span>C programming</span><span>60%</span></div><div class="bar"><i data-w="60"></i></div></div>
+  <div><div class="skill-top"><span>C++ and OOP (basic)</span><span>45%</span></div><div class="bar"><i data-w="45"></i></div></div>
+  <div><div class="skill-top"><span>Data structures and algorithms (basic)</span><span>40%</span></div><div class="bar"><i data-w="40"></i></div></div>
+ </div>
+ <div class="chips">
+  <span class="chip">Problem solving</span><span class="chip">Clear communication</span><span class="chip">Teamwork</span>
+  <span class="chip">Phishing awareness</span><span class="chip">Forage: Cybersecurity</span><span class="chip">Forage: Robotics and Controls</span>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+ <h2>Projects</h2>
+ <p class="lead">Small builds that match what I'm learning. Each one links to its code.</p>
+ <div class="filters" role="group" aria-label="Filter projects">
+  <button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="security">Security</button><button data-f="c">C / C++</button>
+ </div>
+ <div class="cards">
+  <article class="card" data-c="web security">
+   <div class="thumb" style="background:linear-gradient(135deg,#2b50ff,#7aa0ff)">🔐</div>
+   <div class="body"><h3>Password Strength Checker</h3><p>Scores a password on length, character mix and common patterns, and gives tips to improve it. A live version is on the home page.</p>
+   <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+   <div class="row"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Source code</a></div></div>
+  </article>
+  <article class="card" data-c="security web">
+   <div class="thumb" style="background:linear-gradient(135deg,#0e8f6e,#6fd9b4)">🎣</div>
+   <div class="body"><h3>Phishing Awareness Quiz</h3><p>Ten sample emails; the user decides which are phishing and sees why. Based on what I learned in the Mastercard and Forage cybersecurity tasks.</p>
+   <div class="tags"><span>HTML</span><span>JavaScript</span><span>Security</span></div>
+   <div class="row"><a href="#" target="_blank" rel="noopener">Live demo</a><a href="#" target="_blank" rel="noopener">Source code</a></div></div>
+  </article>
+  <article class="card" data-c="c">
+   <div class="thumb" style="background:linear-gradient(135deg,#d9822b,#f5c27a)">🗂️</div>
+   <div class="body"><h3>Student Record Manager</h3><p>A console program in C to add, search, sort and delete student records, saved to a file. Practice for structs, pointers and file handling.</p>
+   <div class="tags"><span>C</span><span>File I/O</span><span>DSA</span></div>
+   <div class="row"><a href="#" target="_blank" rel="noopener">Source code</a></div></div>
+  </article>
+  <article class="card" data-c="security c">
+   <div class="thumb" style="background:linear-gradient(135deg,#6a3fd1,#b79bf2)">🔑</div>
+   <div class="body"><h3>Caesar and XOR Cipher Tool</h3><p>Encrypts and decrypts text with classic ciphers, written in C++ to understand how basic cryptography works before moving to modern algorithms.</p>
+   <div class="tags"><span>C++</span><span>OOP</span><span>Cryptography</span></div>
+   <div class="row"><a href="#" target="_blank" rel="noopener">Source code</a></div></div>
+  </article>
+  <article class="card" data-c="web">
+   <div class="thumb" style="background:linear-gradient(135deg,#c4342d,#f19a94)">🌐</div>
+   <div class="body"><h3>This Portfolio</h3><p>Responsive single-page site with a mobile menu, dark mode, project filter and a validated contact form. No frameworks.</p>
+   <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+   <div class="row"><a href="#" target="_blank" rel="noopener">Source code</a></div></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="resume"><div class="wrap rv">
+ <h2>Resume</h2>
+ <p class="lead">A quick summary. The PDF has the same details in a printable format.</p>
+ <div class="resume">
+  <div><h3>Education</h3>
+   <div class="tl"><div><b>B.Tech, CSE (Cyber Security)</b><span>Tula University, Dehradun · Expected 08/2029</span></div></div>
+  </div>
+  <div><h3>Certifications</h3>
+   <div class="tl">
+    <div><b>Forage: Cybersecurity</b><span>Virtual job simulation certificate</span></div>
+    <div><b>Forage: Robotics and Controls</b><span>Virtual job simulation certificate</span></div>
+    <div><b>Mastercard: Phishing</b><span>Forage certificate</span></div>
+   </div>
+  </div>
+  <div class="btns"><a class="btn primary" href="Rahul_Kumar_Resume.pdf" download>Download resume (PDF)</a></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap rv">
+ <h2>Contact</h2>
+ <div class="contact-grid">
+  <div>
+   <p class="lead">Have an internship, project or question? Send a message and I'll reply by email.</p>
+   <p><a href="mailto:shawrahu0159@gmail.com" style="color:var(--accent);font-weight:500">shawrahu0159@gmail.com</a></p>
+  </div>
+  <form id="form" novalidate>
+   <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name"><div class="msg"></div></div>
+   <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><div class="msg"></div></div>
+   <div class="field"><label for="message">Message</label><textarea id="message" name="message"></textarea><div class="msg"></div></div>
+   <button class="btn primary" type="submit">Send message</button>
+   <div id="formOk" role="status"></div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Rahul Kumar · B.Tech CSE (Cyber Security), Tula University</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
